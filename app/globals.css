@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-berry: #9E3D52;
+  --color-berry-dark: #842E40;
+  --color-blush: #FBECEE;
+  --color-blush-light: #FDF6F7;
+  --color-rose-bar: #B86B77;
+  --color-charcoal: #2D2926;
+}
+
+body {
+  color: #2D2926;
+  background-color: #FAF6F4;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Custom Soft Pink Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5BEC5;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B86B77;
+}
+
+::selection {
+  background-color: #F3CAD1;
+  color: #9E3D52;
+}
+
+.subtle-border {
+  border-color: #F1DEE2;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
